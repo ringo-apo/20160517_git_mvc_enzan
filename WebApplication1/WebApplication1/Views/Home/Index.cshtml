@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>サンプルプログラム</h1>
+    <p class="lead">サンプルプログラムです。</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>簡単な演算</h2>
+        <p>
+            簡単な演算をさせてみましょう。<br>
+        </p>
+        @using (Html.BeginForm("Kekka", "Home"))
+        { 
+            <input type="text" name="hensu1" size="10">
+            <text> + </text>
+            <input type="text" name="hensu2" size="10"><br>
+            <input type="submit">
+        }
+
+
+
+
+    </div>
+</div>
